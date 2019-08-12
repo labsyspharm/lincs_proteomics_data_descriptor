@@ -1,9 +1,17 @@
 library(ggpubr)
 library(ggrepel)
                                      
- # ---Figure 2a ----
-ms_colors <- c("#0073C2B2", "#EFC000B2", #"#868686B2",
-               "#CD534CB2", "#868686B2",  "#868686B2")  #"#7AA6DCB2
+# ---Figure 2a ----
+add.alpha <- function(col, alpha=1){
+  if(missing(col))
+    stop("Please provide a vector of colours.")
+  apply(sapply(col, col2rgb)/255, 2, 
+        function(x) 
+          rgb(x[1], x[2], x[3], alpha=alpha))  
+}
+
+ms_colors <- add.alpha(c("#ca7832", "#6d73b0", #"#868686B2",
+               "#7da245", "#c85f61",  "#868686B2"), 0.7)
 names(ms_colors) <- c('Basal A', 'Basal B',# 'Bridge',
                       'Luminal', 'Non malignant, Basal', 'Basal')
 dm <- read.csv('../data/mol_subtype_breakdown.csv')
@@ -20,13 +28,7 @@ f2a <- ggbarplot(dm, x='molecular_subtype', y='num_cells', palette=c(dm$color),
     theme(axis.text.x=element_text(angle=45, hjust=1))
 
 #---Figure 2b -----
-add.alpha <- function(col, alpha=1){
-  if(missing(col))
-    stop("Please provide a vector of colours.")
-  apply(sapply(col, col2rgb)/255, 2, 
-        function(x) 
-          rgb(x[1], x[2], x[3], alpha=alpha))  
-}
+
 rs_colors <- add.alpha(c('#c85f61', '#4dab9b', '#ca7832', '#7da245'), 0.7)
 names(rs_colors) <- c('NM', 'HER2amp', 'TNBC', 'HR+')
 
@@ -44,8 +46,8 @@ f2b <- ggbarplot(dr, x='receptor_status', y='num_cells', palette=c(dr$color),
 
 
 #---Figure 2c------------------------------------------------------------------
-ms_colors <- c("#0073C2B2", "#EFC000B2", #"#868686B2",
-               "#CD534CB2", "#868686B2",  "#868686B2",  "#868686B2")  #"#7AA6DCB2
+ms_colors <- c("#ca7832", "#6d73b0", #"#868686B2",
+               "#7da245", "#c85f61",  "#868686B2",  "#868686B2")  #"#7AA6DCB2
 names(ms_colors) <- c('Basal A', 'Basal B',# 'Bridge',
                       'Luminal', 'Non malignant, Basal', 'Basal', 'unconfirmed')
 
@@ -60,7 +62,7 @@ f2c <- ggplot(dfr, aes(x=pc_1, y=pc_2, color=molecular_subtype)) +
   xlab('PC 1 (15.7%)') + ylab('PC 2 (8.6%)') +
   ggtitle("Proteome") +
   geom_label_repel(aes(label = sample),
-                   size=3,
+                   size=5,
                    box.padding   = 0.35, 
                    point.padding = 0.5,
                    segment.color = 'grey50') +
@@ -81,3 +83,5 @@ f2c <- ggplot(dfr, aes(x=pc_1, y=pc_2, color=molecular_subtype)) +
 
 f2ab <- ggarrange(f2a, f2b, nrow=2, ncol=1)
 f2abc <- ggarrange(f2ab, f2c, ncol=2, nrow=1, widths=c(0.3, 0.7))
+
+ggsave('Figure2.pdf')
