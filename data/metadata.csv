@@ -1,0 +1,85 @@
+batch,cell_line,molecular_subtype,receptor_status,sample,tmt_label
+batch1,BT20,Basal A,TNBC,BT20,Set1~rq_126_sn_sum
+batch1,Bridge1,Bridge,Bridge,Bridge1,Set1~rq_131_sn_sum
+batch1,HCC1806,Basal A,TNBC,HCC1806,Set1~rq_127n_sn_sum
+batch1,Hs578T,Basal B,TNBC,Hs578T,Set1~rq_127c_sn_sum
+batch1,MCF10A,"Non malignant, Basal",NM,MCF10A,Set1~rq_128n_sn_sum
+batch1,MCF7,Luminal,HR+,MCF7,Set1~rq_128c_sn_sum
+batch1,MDAMB231,Basal B,TNBC,MDAMB231,Set1~rq_129n_sn_sum
+batch1,PDX1258,,TNBC,PDX1258,Set1~rq_129c_sn_sum
+batch1,PDX1328,,TNBC,PDX1328,Set1~rq_130n_sn_sum
+batch1,SKBR3,Luminal,Her2amp,SKBR3,Set1~rq_130c_sn_sum
+batch2,Bridge2,Bridge,Bridge,Bridge2,Set2~rq_131_sn_sum
+batch2,CAL120,Basal B,TNBC,CAL120,Set2~rq_130c_sn_sum
+batch2,CAL51,Basal B,TNBC,CAL51,Set2~rq_129c_sn_sum
+batch2,CAL85-1,Basal,TNBC,CAL85-1,Set2~rq_130n_sn_sum
+batch2,MDAMB134,Luminal,HR+,MDAMB134,Set2~rq_126_sn_sum
+batch2,MDAMB157,Basal B,TNBC,MDAMB157,Set2~rq_127n_sn_sum
+batch2,MDAMB361,Luminal,Her2amp,MDAMB361,Set2~rq_127c_sn_sum
+batch2,MDAMB436,Basal B,TNBC,MDAMB436,Set2~rq_128n_sn_sum
+batch2,MDAMB453,Luminal,TNBC,MDAMB453,Set2~rq_128c_sn_sum
+batch2,MDAMB468,Basal A,TNBC,MDAMB468,Set2~rq_129n_sn_sum
+batch3,BT549,Basal B,TNBC,BT549,Set3~rq_126_sn_sum
+batch3,Bridge3,Bridge,Bridge,Bridge3,Set3~rq_131_sn_sum
+batch3,HCC1395,Basal B,TNBC,HCC1395,Set3~rq_128n_sn_sum
+batch3,HCC1419,Luminal,Her2amp,HCC1419,Set3~rq_128c_sn_sum
+batch3,HCC1500,Luminal,HR+,HCC1500,Set3~rq_129n_sn_sum
+batch3,HCC1937,Basal A,TNBC,HCC1937,Set3~rq_129c_sn_sum
+batch3,HCC1954,Basal A,Her2amp,HCC1954,Set3~rq_130n_sn_sum
+batch3,HCC38,Basal B,TNBC,HCC38,Set3~rq_127n_sn_sum
+batch3,HCC70,Basal A,TNBC,HCC70,Set3~rq_127c_sn_sum
+batch3,PDXHCI002,,TNBC,PDXHCI002,Set3~rq_130c_sn_sum
+batch4,Bridge4,Bridge,Bridge,Bridge4,Set4~rq_131_sn_sum
+batch4,CAMA1,Luminal,HR+,CAMA1,Set4~rq_126_sn_sum
+batch4,HCC1143,Basal A,TNBC,HCC1143,Set4~rq_127n_sn_sum
+batch4,HCC1428,Luminal,HR+,HCC1428,Set4~rq_127c_sn_sum
+batch4,MCF10Arep2,"Non malignant, Basal",NM,MCF10Arep2,Set4~rq_128c_sn_sum
+batch4,SUM1315,Basal B,TNBC,SUM1315,Set4~rq_129n_sn_sum
+batch4,SUM149,Basal B,TNBC,SUM149,Set4~rq_129c_sn_sum
+batch4,SUM159,Basal B,TNBC,SUM159,Set4~rq_130n_sn_sum
+batch4,T47D,Luminal,HR+,T47D,Set4~rq_130c_sn_sum
+batch4,hME1,"Non malignant, Basal",NM,hME1,Set4~rq_128n_sn_sum
+batch5,BT-474,,HR+/Her2amp,BT-474,default~rq_127c_sn_sum
+batch5,BT-483,,HR+,BT-483,default~rq_128n_sn_sum
+batch5,EFM-19,,HR+,EFM-19,default~rq_128c_sn_sum
+batch5,EVSA-T,,ER-/PR+,EVSA-T,default~rq_129n_sn_sum
+batch5,HCC1187,,TNBC,HCC1187,default~rq_129c_sn_sum
+batch5,MCF-10A,,NM,MCF-10A,default~rq_126_sn_sum
+batch5,MDA-MB-175VII,,HR+,MDA-MB-175VII,default~rq_127n_sn_sum
+batch5,MDA-MB-415,,HR+,MDA-MB-415,default~rq_130n_sn_sum
+batch5,New Bridge5,,Bridge,New Bridge5,default~rq_131C_sn_sum
+batch5,Old Bridge5,,Bridge,Old Bridge5,default~rq_131_sn_sum
+batch5,PDX1206,,TNBC,PDX1206,default~rq_130c_sn_sum
+batch6,ZR-75-30,,HR+/Her2amp,ZR-75-30,default~rq_126_sn_sum
+batch6,HCC202,,Her2amp,HCC202,default~rq_127n_sn_sum
+batch6,UACC-812,,HR+/Her2amp,UACC-812,default~rq_127c_sn_sum
+batch6,EVSA-T (repeat),,ER-/PR+,EVSA-T (repeat),default~rq_128n_sn_sum
+batch6,SUM52PE,,HR+,SUM52PE,default~rq_128c_sn_sum
+batch6,ZR-75-1,,HR+,ZR-75-1,default~rq_129n_sn_sum
+batch6,184A-1 (repeat),,NM,184A-1 (repeat),default~rq_129c_sn_sum
+batch6,SUM229PE,,TNBC,SUM229PE,default~rq_130n_sn_sum
+batch6,MDA-MB-330,,HR+/Her2amp,MDA-MB-330,default~rq_130c_sn_sum
+batch6,EFM-19 (repeat),,HR+,EFM-19 (repeat),default~rq_131_sn_sum
+batch6,Bridge6,,Bridge,Bridge6,default~rq_131C_sn_sum
+batch7,MCF12A,,NM,MCF12A,default~rq_126_sn_sum
+batch7,MGH312,,Her2amp,MGH312,default~rq_127n_sn_sum
+batch7,MGH358,,HR+/Her2amp,MGH358,default~rq_127c_sn_sum
+batch7,SUM185PE,,ER-/PR+,SUM185PE,default~rq_128n_sn_sum
+batch7,184A-1,,NM,184A-1,default~rq_128c_sn_sum
+batch7,184B5,,HR+,184B5,default~rq_129n_sn_sum
+batch7,MCF10A,,NM,MCF10A,default~rq_129c_sn_sum
+batch7,HCC1569,,TNBC,HCC1569,default~rq_130n_sn_sum
+batch7,AU-565,,HR+/Her2amp,AU-565,default~rq_130c_sn_sum
+batch7,MCF10A (repeat),,NM,MCF10A (repeat),default~rq_131_sn_sum
+batch7,Bridge7,,Bridge,Bridge7,default~rq_131c_sn_sum
+batch8,SUM190PT,,Her2amp,SUM190PT,default~rq_126_sn_sum
+batch8,SUM44PE,,HR+,SUM44PE,default~rq_127n_sn_sum
+batch8,UACC893,,Her2amp,UACC893,default~rq_127c_sn_sum
+batch8,ZR-75-1 (repeat),,HR+,ZR-75-1 (repeat),default~rq_128n_sn_sum
+batch8,ZR-75-30 (repeat),,HR+/Her2amp,ZR-75-30 (repeat),default~rq_128c_sn_sum
+batch8,COV362,,ovarian,COV362,default~rq_129n_sn_sum
+batch8,OVCAR3,,ovarian,OVCAR3,default~rq_129c_sn_sum
+batch8,OVCAR8,,ovarian,OVCAR8,default~rq_130n_sn_sum
+batch8,SKOV3,,ovarian,SKOV3,default~rq_130c_sn_sum
+batch8,Old Bridge8,,Bridge,Old Bridge8,default~rq_131_sn_sum
+batch8,New Bridge8,,Bridge,New Bridge8,default~rq_131c_sn_sum
