@@ -89,6 +89,9 @@ def normalize_between_batches(df, df_ref, samples, control='Bridge'):
     df_norm_inter = df.copy()
     df_norm_inter.loc[:, true_samples] = nrm * df_norm_inter.loc[:,
                                                                  true_samples]
+    if 'Uniprot_Id' not in df_norm_inter.columns.tolist():
+        df_norm_inter['Uniprot_Id'] = [s.split('|')[1] for s in
+                                       df_norm_inter['Protein Id'].tolist()]
     df_norm_inter.index = df_norm_inter.Uniprot_Id
     # Take mean of duplicate protein entries
     df_norm_inter = df_norm_inter.groupby(df_norm_inter.index).mean()
