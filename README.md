@@ -1,5 +1,8 @@
 # Proteomic profiling of Breast cancer cell lines and PDX models
 
+![Alt text](src/Figure2.jpg?raw=true "Title")
+
+
 Associated Synapse project: https://www.synapse.org/#!Synapse:syn7802481
 
 ## License and Funding
@@ -15,5 +18,4 @@ git clone https://github.com/datarail/msda.git
 pip install -e msda
 ```
 
-![Alt text](src/Figure2.jpg?raw=true "Title")
 
