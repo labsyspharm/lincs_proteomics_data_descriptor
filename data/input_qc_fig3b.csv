@@ -1,0 +1,9 @@
+batch,avg_num_peptides,batch_intensities_mean,avg_intensities
+batch1,16.8,1174631,115
+batch2,16.3,1039813,100
+batch3,16.5,1012577,98
+batch4,20.0,1901935,181
+batch5,22.0,1133933,113
+batch6,26.9,1367443,159
+batch7,37.9,1089476,118
+batch8,54.2,1563090,156
