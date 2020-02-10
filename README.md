@@ -15,5 +15,5 @@ git clone https://github.com/datarail/msda.git
 pip install -e msda
 ```
 
-![Alt text](src/Figure2.pdf?raw=true "Title")
+![Alt text](src/Figure2.jpg?raw=true "Title")
 
