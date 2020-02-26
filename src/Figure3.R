@@ -3,10 +3,11 @@ library(corrplot)
 
 # -- Figure 3a ---------
 dfs <- read.csv(file='../data/upset_plot_input_8batches.csv')
+cols <- c('Batch 1', 'Batch 2', 'Batch 3', 'Batch 4', 'Batch 5', 'Batch 6', 'Batch 7', 'Batch 8')
+colnames(dfs) <- cols
 
-f3a <- upset(dfs, sets=c('batch1', 'batch2', 'batch3', 'batch4', 
-                         'batch5', 'batch6', 'batch7', 'batch8'), sets.bar.color = "#56B4E9",
-          mainbar.y.label = "proteins identified in common", sets.x.label = "batch size", 
+f3a <- upset(dfs, sets=cols, sets.bar.color = "#56B4E9",
+          mainbar.y.label = "Proteins identified in common", sets.x.label = "Batch size", 
           text.scale = c(2, 1.5, 2, 1.5, 1.5, 1.25),
           order.by="freq", keep.order=TRUE)
 
@@ -40,7 +41,9 @@ colnames(x) = c("MCF10A rep1", "MCF10A rep2", 'MCF10A rep3',
 rownames(x) = c("MCF10A rep1", "MCF10A rep2", 'MCF10A rep3', 
                 'MCF10A rep4', 'MCF10A rep5', 
                 'hME1')
+
+pdf(file = 'Figure3B.pdf', width=8, height=8)
 f3b <- corrplot.mixed(x, lower.col = "black", number.cex = .7, tl.cex=0.8)
-ggsave('Figure3C.pdf', dpi=300)
+dev.off()
 
 
