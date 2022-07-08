@@ -21,7 +21,7 @@ data <- read.csv('../data/Bridge_UPS2_AbsoluteQuant_Results.csv')
 dr <- read.csv('../data/UPS2_report.csv')
 
 
-s1 <- ggplot(data, aes_string(x='log10_ibaq', y='t')) + 
+s1 <- ggplot(data, aes_string(x='log10_ibaq', y='Bridge_fmol_per_ug')) + 
   geom_point(color='grey', alpha=0.5) + 
   theme_bw() + xlab('log10 (iBAQ') + ylab('fmol / ug')
 

@@ -3,11 +3,11 @@ library(corrplot)
 
 # -- Figure 3a ---------
 dfs <- read.csv(file='../data/upset_plot_input_8batches.csv')
-cols <- c('Batch 1', 'Batch 2', 'Batch 3', 'Batch 4', 'Batch 5', 'Batch 6', 'Batch 7', 'Batch 8')
+cols <- c('Run 1', 'Run 2', 'Run 3', 'Run 4', 'Run 5', 'Run 6', 'Run 7', 'Run 8')
 colnames(dfs) <- cols
 
 f3a <- upset(dfs, sets=cols, sets.bar.color = "#56B4E9",
-          mainbar.y.label = "Proteins identified in common", sets.x.label = "Batch size", 
+          mainbar.y.label = "Proteins identified in common", sets.x.label = "Unique proteins identified", 
           text.scale = c(2, 1.5, 2, 1.5, 1.5, 1.25),
           order.by="freq", keep.order=TRUE)
 

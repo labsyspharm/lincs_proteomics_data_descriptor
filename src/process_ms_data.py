@@ -37,7 +37,7 @@ def read_norm(data_filename, metadata_filename, batch_name):
     dfs = pd.read_csv(data_filename)
     dfm = pd.read_csv(metadata_filename)
     dfm = dfm[dfm.batch == batch_name].copy()
-    mdict =  {m:c for m, c in zip(dfm.tmt_label, dfm.cell_line)}
+    mdict =  {m:c for m, c in zip(dfm.tmt_label, dfm['sample'])}
     dfs = dfs.rename(columns=mdict)
     samples = dfm['sample'].tolist()
     
